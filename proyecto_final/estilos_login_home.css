@@ -1,0 +1,904 @@
+/* ESTILO PARA LAS PAGINAS DE INICIO */
+
+*{
+    padding: 0;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+body{
+    width: auto;
+    height: auto;
+    background-color: #000;
+}
+/* /paginas de login (poco contenido) */
+
+#bg_home{
+    background-image: url('imagenes/bg_vertical.jpg');
+    background-size: cover ;
+    width: 500px;
+    height: auto;
+}
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+/* HEADER_LOGIN.PHP */
+
+#marca_login{
+    background-color: rgba(180, 177, 171, 0.24);
+    width: 190px;
+    height: 195px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 90rem;
+    box-shadow: rgba(255, 0, 0, 0.507) 3px 3px 35px;
+}
+#marca_login img{
+    width: 190px;
+}
+.animate__zoomIn{
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: initial;
+    
+}
+.animate__zoomInDown{
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+/*  ---------------------------------INDEX.PHP --------------------------------------------------*/
+
+#btn_login{
+    height: 15rem;
+    margin-top: 6rem;
+}
+#btn_login li{
+    list-style-type: none;
+    text-align: center;
+    margin-top: 0.5rem;
+    display: block;
+}
+.bt_login a{
+    text-decoration: none;
+    color: white;
+    text-shadow: rgba(255, 0, 0, 0.507) 2px 2px;
+    font-family: 'Sedgwick Ave Display', cursive;
+}
+.btn_entrar,
+.btn_registro{
+    font-size: 18pt;
+}
+.bt_login{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 90px;
+    padding: 0.5rem;
+}
+.bt_login:hover{
+    background-color: rgba(180, 177, 171, 0.24);
+    padding-inline: 2rem;
+    border-radius: 10rem;
+}
+
+/* //FOOTER //*/
+
+.btn_ayuda{
+    font-size: 10pt;
+    font: small-caption;
+    background-color: rgba(180, 177, 171, 0.548);
+    height: auto;
+    border-radius: 55px;
+    display: block;
+    padding: 0.2rem;
+    float: right;
+    margin-right: 2rem;
+    margin-top: 8rem;
+}
+.btn_ayuda a{
+    text-decoration: none;
+    color: black;
+    padding: 0.2rem;
+}
+.btn_ayuda:hover{
+    background-color: rgba(255, 0, 0, 0.507);
+}
+
+/* //creditos FOOTER //*/
+#creditos{
+    margin-top: 9rem;
+    margin-left: 1rem;
+    width: 480px;
+    height: 1.2rem;
+    background-color:rgba(0, 0, 0, 0.644);
+    position: absolute;
+
+}
+#creditos ul{
+    display: flex;
+}
+#creditos li a{
+    padding-top: 0.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: white;
+    font: small-caption;
+}
+#creditos li{
+    color: white;
+    font: small-caption;
+}
+#creditos span{
+    color: rgb(165, 28, 4);
+    background-color: transparent rgb(56, 56, 202);
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/*------------------------------ LOGIN.PHP ---------------------------------*/
+
+.titulo_form{
+    margin-top: 1rem;
+    width: 250px;
+    height: 3rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: white;
+    text-shadow: rgba(255, 0, 0, 0.507) 1px 1px;
+}
+.titulo_form h2{
+    font-size: 25pt;
+    text-shadow: rgba(255, 0, 0, 0.507) 2px 3px;
+    color: white;
+    font-weight: 100;
+}
+#form_login{
+    width: 400px;
+    height: 10rem;
+    margin-top: 0.5rem;
+}
+
+/* //btn login.php// */
+#insert_email,
+input[type= "password"]{
+    outline: none;
+    padding: 5px;
+    display: block;
+    margin:5px auto;
+    width: 220px;
+    border: 0px  rgba(238, 238, 238, 0);
+    background-color: rgba(238, 238, 238, 0) ;
+    border-bottom: rgba(255, 0, 0, 0.932) solid 2px;
+}
+
+#insert_email:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.459) ;
+    border-radius: 10px;
+
+}
+#insert_password:hover{
+    color: white;
+}
+#confirm_password:hover{
+    color: white;
+}
+
+input[type="submit"]{
+    display: block;
+    margin:15px auto;
+    width: 100px;
+    padding: 5px;
+    cursor: pointer;
+    outline: none;
+    border: 0px  rgba(238, 238, 238, 0);
+    background-color: rgba(238, 238, 238, 0) ;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 18pt;
+    text-shadow: rgba(255, 0, 0, 0.507) 2px 2px;
+    color: white;
+    font-weight: 100;
+}
+#btn_enviar:hover,
+#btn_enviar:focus{
+    background-color: rgba(180, 177, 171, 0.24);
+    border-radius: 50px;
+    padding-top: 0.3rem;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+/* ----------------------HEADER MENU.PHP------------------------ */
+
+.btn_volver{
+    width: 580px;
+    height: 35px;
+}
+.btn_volver button{
+    float: left;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0);
+    border:rgba(0, 0, 0, 0) ;
+}
+.btn_volver a button {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.911);
+    text-shadow: rgba(255, 0, 0, 0.507) 2px 2px;
+
+}
+.btn_volver a button:hover{
+    cursor: pointer;
+    box-shadow: rgba(255, 0, 0, 0.507) 2px 2px 25px;
+    border-radius: 50px;
+}
+.marca_menu{
+    width: 120px;
+    border-radius: 100px;
+    background-color: #f1ebebc2;
+    box-shadow: rgba(255, 0, 0, 0.507) 10px 10px 45px;
+    float: left;
+    margin-top: 1.5rem;
+    margin-left: 0.4rem;
+    margin-bottom: 2rem;
+}
+.marca_menu img{
+    width: 120px;
+}
+/* ///btn_principal// */
+
+    .btn_principal{
+        margin-top: 3rem;
+        width: 350px;
+        float: left;
+        margin-left: 5px;
+    }
+    .btn_principal ul{
+        display: flex;
+    
+    }
+    .btn_principal ul li {
+        padding: 0.5rem;
+        margin-bottom: 0.2rem;
+        text-align: center;
+    
+    }   
+    .btn_principal a{
+        text-decoration: none;
+        color: white;
+        font-family: 'Sedgwick Ave Display', cursive;
+        text-shadow: rgba(10, 10, 10, 0.986) 3px 2px;
+        font-weight: 500;
+        font-size: 14pt;
+    
+    }
+    .btn_principal li:hover{
+        background-color:rgba(255, 0, 0, 0.507) ;
+        border-radius: 90px;
+    }
+
+    /* //icons// */
+    .fa-book-open{
+        color: rgb(255, 138, 102);
+    }
+    .fa-map-marker-alt{
+        color: rgb(255, 41, 4);
+        padding-right: 1px;
+    }
+    .fa-calendar-alt{
+        color:rgb(124, 121, 121);
+    }
+    .fa-paper-plane{
+        color: rgb(56, 56, 202);
+    }
+    
+/* //buscador// */
+    input.buscador{
+        outline: none;
+        background-color: rgba(0, 0, 0, 0);
+        border: rgba(0, 0, 0, 0);
+        border-bottom: rgba(255, 0, 0, 0.932) solid 1px;
+        margin-left: 5rem;
+    }
+    input.buscador:hover{
+        border: rgba(0, 0, 0, 0);
+        border-bottom: rgba(255, 0, 0, 0.932) solid 1px;
+        color: white;
+    }
+    button.btn_buscador{
+        text-decoration: none;
+        color: rgba(255, 0 , .0507 );
+        padding: 8px;
+        background-color: rgba(0, 0, 0, 0);
+        border:rgba(0, 0, 0, 0) ;
+        cursor: pointer;
+        border-radius: 50px;
+    }
+    button.btn_buscador:hover{
+        background-color: rgba(245, 235, 235, 0.164);
+    }
+    /* ---------------------------------------HOME.PHP--------------------------------------------------- */
+
+/* //imagenes cuerpo// */
+    #img_principal{
+        width: 500px;
+        margin-top: 1rem;
+        float: left;
+    }
+    #img_principal img{
+        width: 500px;
+    }
+    .animate__backInLeft{
+        animation-duration: 4s;
+    }
+    #img_promo{
+        width: 250px;
+        margin-top: 1rem;
+    }
+    #img_promo img{
+        width: 250px;
+        height: 320px;
+        border-radius: 20px;
+    }
+/* // texto // */
+#text_pie{
+    width: 210px;
+    height: 90px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(to right,    rgba(180, 177, 171, 0.596) 50%, rgba(255,255,255,0) 100%);
+}
+
+#text_pie p {
+    font-size: 10pt;
+    padding: 0.3rem;
+    margin-left: 0.5rem;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10pt;
+}
+#text_pie:hover{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.644) 50%, rgba(255,255,255,0) 100%);
+    border-radius: 1rem;
+    color: white;
+}
+
+/* //btn pie// */
+#btn_pie{
+    width: 450px;
+    height: auto;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.644) 50%, rgba(255,255,255,0) 100%);
+    border-radius: 50px;
+}
+#btn_pie ul{
+    display: flex;
+}
+#btn_pie li{
+    text-align: center;
+    margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+#btn_pie a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Sedgwick Ave Display', cursive;
+    border-radius: 50px;
+    margin: 0.2rem;
+}
+#btn_pie li:hover{
+    background-color: rgba(255, 0, 0, 0.507) ;
+    border-radius: 20px;
+}
+.insta,
+.reservas,
+.nosotros,
+.contactos{
+    text-shadow: black 2px 2px;
+}
+/* //icons// */
+.fa-instagram{
+    color: #eb1fcf ;
+}
+.fa-building{
+    color: rgb(243, 119, 36);
+}
+.fa-whatsapp{
+    color: green;
+}
+
+/* //footer home// */
+.footer_home{
+    margin-top: 2rem;
+    float: left;
+}
+#creditos_home{
+    width: 490px;
+    height: auto;
+    background-color:rgba(0, 0, 0, 0.644);
+
+}
+#creditos_home ul{
+    display: flex;
+}
+#creditos_home li a{
+    padding-top: 0.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: white;
+    font: small-caption;
+}
+#creditos_home li{
+    color: white;
+    font: small-caption;
+}
+#creditos_home span{
+    color: rgb(165, 28, 4);
+    background-color: transparent rgb(56, 56, 202);
+}
+/* -----------------------------------------WEB MENU------------------------------------------------ */
+
+/* -----------------------------------------MENU.PHP------------------------------------------------ */
+
+/* //bg = home// //footer=home// */
+
+#btn_menu{
+    width: max-content;
+    height: 3rem;
+    float: left;
+    margin-top: 5rem;
+    margin-left: 0.5rem;
+}
+#btn_menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#btn_menu li{
+    padding-top: 0.2rem;
+}
+#btn_menu  a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-shadow: rgba(10, 10, 10, 0.986) 3px 2px;        padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 10rem;
+    }
+#btn_menu li:hover{
+        background-color:rgba(255, 0, 0, 0.507)  ;
+        border-radius: 15px;
+    }
+/* //icons/ */
+.fa-percentage{
+    color: red;
+}
+.fa-hockey-puck{
+    color: salmon;
+}
+.fa-utensils{
+    color: silver;
+}
+.fa-glass-cheers{
+    color: gold;
+}
+/* //contenido// */
+#img_uno{
+    width: 580px;
+    margin-top: 0.5rem;
+    margin-left: 150px;
+}
+#img_dos{
+    width: 580px;
+                margin-top: 0.7rem;
+                margin-left: 150px;
+}
+#img_uno .img_izquierda{
+    width: 250px;
+}
+#img_dos .img_derecha{
+    width: 250px;
+        }
+
+/* -----------------------------------------LOCALES.PHP------------------------------------------------ */
+/* //bg = home// //footer=home//*/
+
+/* //menu para  ver local// */
+
+#menu_locales{
+    width: 300px;
+}
+#menu_locales ul{   
+    display: flex;
+    padding: 0.5rem;
+}
+#menu_locales li{
+    padding: 0.5rem;
+    background-color: rgba(245, 235, 235, 0.164);
+    border-radius: 80px;
+}
+#menu_locales a{
+    text-decoration: none;
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: white;
+    text-shadow: black 2px 2px ;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+#menu_locales li:hover{
+    background-color:rgb(165, 28, 4) ;
+}
+/* -------------------------------------------------------------------------------- */
+
+/* //contenedor de info// */
+#contenedor_sucursal{
+    background-color: rgba(245, 235, 235, 0.164);
+    width: 400px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px 10px 10px 10px;
+}
+#contenedor_sucursal h3{
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-align: center;
+    color: black;
+    text-shadow: white 1px 1px ;
+    font-weight: 500;
+    font-size: 25pt;
+    text-decoration-line:underline;
+    }
+#contenedor_sucursal ul{
+    display: block;
+}
+#contenedor_sucursal li{
+    font-family: 'calibri';
+    font-weight: 600;
+}
+/* //icons// */
+.fa-phone-alt{
+    color: silver;
+}
+.fa-at{
+    color: skyblue;
+}
+.fa-map-pin{
+    color: rgb(253, 0, 0);
+}
+.fa-clock{
+    color: teal;
+}
+.fa-product-hunt{
+    color: rgb(230, 41, 41);
+}
+.fa-opera{
+    color:rgb(230, 41, 41);
+}
+.fa-cuttlefish{
+color:rgb(230, 41, 41);
+}
+/* /img local// */
+.img_local img{
+    width: 350px;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+
+/* -----------------------------------------CONTACTO.PHP------------------------------------------------ */
+/* //bg = home// //footer=home//*/
+
+#form_contacto{
+    background-color: rgba(245, 235, 235, 0.24);
+    width: 400px;
+    margin-top: 1rem;
+    border-radius: 10px 10px 10px 10px;
+}
+#form_contacto h1{
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    text-decoration-line:underline;
+    text-shadow: black 3px 2px;
+}
+.consulta_form{
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: white;
+    text-shadow: black 2px 2px ;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+/* //inputs contactos// */
+.caja_nombre{
+    background-color: rgba(245, 235, 235, 0.623);
+    padding: 0.2rem;
+    width: 203px;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid red;
+    border-radius: 5px;
+}
+.caja_nombre:hover,
+.caja_nombre:focus,
+.caja_mail:hover,
+.caja_mail:focus{
+    background-color: rgb(245, 235, 235);
+}
+.caja_mail{ 
+    background-color: rgba(245, 235, 235, 0.623);
+    padding: 0.2rem;
+    width: 220px;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid red;
+    border-radius: 5px;
+
+}
+.escriba_consulta{
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: white;
+    text-shadow: black 2px 2px ;
+    font-weight: 500;
+}
+
+textarea{
+    height: 126px;
+    width: 290px;
+    resize: none;
+    background-color: rgba(253, 253, 253, 0.788);
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+#b_enviar{
+    background-color: rgba(29, 26, 26, 0.89);
+    padding: 0.5rem;
+    padding-left: 1.7rem;
+    padding-right: 2rem;
+    margin-left: 9rem;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+#b_enviar:hover{
+    background-color: rgb(255, 0, 0);
+}
+/* //[e]// */
+#consulta-ok{
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: black;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    background-color: rgba(245, 235, 235, 0.733);
+    border-radius: 900px;
+    width: 400px;
+
+}
+#consulta-ok h3{
+    font-weight: 400;
+    text-align: center; 
+}
+
+/* -----------------------------------------RESERVAS.PHP------------------------------------------------ */
+/* //bg = home// //footer=home//*/ 
+
+#form_reservas{
+    background-color: rgba(245, 235, 235, 0.24);
+    width: 480px;
+    margin-top: 1rem;
+    border-radius: 10px 10px 10px 10px;
+
+}
+#form_reservas h1{
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    text-decoration-line:underline;
+    text-shadow: black 3px 2px;
+}
+/* //inputs// */
+.caja_invitados{
+    background-color: rgba(245, 235, 235, 0.164);
+    border: 0;
+    border-bottom: 1px solid red;
+        width: 150px;
+        border-radius: 90px;
+        margin-bottom: 2rem;
+}
+.selector{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+/* //img// */
+.img_invitacion{
+    float: right;
+    width: 200px;
+    margin-top: 3rem;
+}
+.img_invitacion img{
+    width: 190px;
+    border-radius: 20px;
+}
+/* //[e]// */
+#reserva-ok{
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: black;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    background-color: rgba(245, 235, 235, 0.733);
+    border-radius: 900px;
+    width: 420px;
+}
+#reserva-ok h3{
+    font-weight: 400;
+    text-align: center; 
+}
+
+/* ----------------UPS------------ */
+.titulo_ups{ 
+    width: 420px;
+    margin-top: 3rem;
+    background-color: rgba(245, 235, 235, 0.733);
+    border-radius: 90px;
+}
+.titulo_ups h1{
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    text-shadow: black 3px 2px;
+}
+.img_ups{
+    width: 420px;
+    margin-top: 1rem;
+}
+.img_ups img{
+    margin-left: 6.5rem;
+    border-radius: 40px;
+}
+
+
+/*-------------------------RESPONSIVE------------------- */
+
+/* ---CELULAR--- */
+@media all and (max-width:599px){
+    /* tags principales */
+    body{
+        width: min-content;
+    }
+    #bg_home{
+        width: 450px;
+    }
+    #creditos_home{
+        width: 375px;
+        height: 2rem;
+        }
+        #creditos_home a{
+            text-align: center;
+        }
+    #apoyo{
+        width: 100px;
+    }
+    #creditos{
+        width: 375px;
+        height: 2.5rem;
+    }
+    #creditos ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer_home li{
+        margin-left: 1rem;
+    }
+    .footer_home{
+        width: 400px;
+        margin-top: 2rem;
+        padding: 0;
+        margin-left: 1rem;
+    }
+
+    /* paginas secudarias */
+    #marca_menu{
+    width: min-content;
+}
+.btn_principal{
+    width: 200px;
+    margin-top: 1rem;
+    float: left;
+    margin-left: 0px;
+}
+.btn_principal ul{
+    display: flex;
+    flex-direction: column;
+}
+button.btn_buscador{
+    width: 200px;
+}
+input.buscador{
+    width: 200px;
+    margin-left: 0rem;
+}
+#img_principal{
+    width: 490px;
+}
+#img_principal img {
+    width: 480px;
+    margin-right: 0;
+}
+#btn_pie{
+    width: min-content;
+}
+#btn_pie ul {
+    flex-wrap: nowrap;
+    padding: 1.5rem;
+}
+#btn_pie li {
+    text-align: center;
+    padding: 0.5rem;
+}
+#btn_menu{
+    width: 250px;
+    margin-top: 4rem;
+    float: left;
+    margin-left: 3px;
+}
+#img_uno{
+    width: 350px;
+    margin-right: 1rem;
+    margin: 0;
+}
+#img_uno img{
+    width: 250px;
+    margin-left: 6rem;
+}
+#img_dos{
+    width: 350px;
+    margin-right: 1rem;
+    margin: 0;
+}
+#img_dos img{
+    width: 250px;
+    margin-left: 6rem;
+}
+.img_invitacion{
+    width: 150px;
+    float: none;
+    margin-top: 1rem;
+}
+#form_reservas{
+    width: 380px;
+}
+.img_invitacion img{
+    width: 150px;
+}
+}
+/* //FIN DE CELULAR// */
+
+/* ---TABLET O DESKTOP --- */
+
+@media all and (min-width:600px) and (max-width:1023px){
+        /* tags principales */
+        body{
+            width: max-content;
+        }
+        /* paginas secudarias */
+        #marca_menu{
+            width: max-content;
+    }
+    #btn_pie{
+        width: max-content;
+    }
+
+}
